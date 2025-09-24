@@ -1,0 +1,51 @@
+/* Part 3: Combining CSS Animations with JavaScript*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.load {
+      width: 50px;
+      height: 50px;
+      border: 5px solid lightgray;
+      border-top: 5px solid blue;
+      border-radius: 50%;
+      margin: 30px auto;
+      display: none; /* hidden by default */
+      animation: spin 2s linear infinite;
+    }
+
+    .btn-wrap{
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin-top: 20px;
+    }
+    .start-btn{
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    .stop-btn{
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }

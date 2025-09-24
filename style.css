@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hover Transition Effect */
+
+.hover {
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: #0815d1;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 32px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.hover:hover {
+    background-color: #0fff87;
+    color: #212121;
+    transform: scale(1.1);
+}
+
+/* Image Animation Effect */
+
+.house {
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    margin: 30px;
+    border-radius: 8px;
+    animation: bounceUpDown 3s infinite;
+}
+
+@keyframes bounceUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+}
+
